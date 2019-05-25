@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.quadrado{
+    width: 400px;
+    height: 400px;
+    background-color: #F44336;
+    border: thick  groove  black;
+    color:white;
+    transition: all 10s cubic-bezier(.06,.87,.69,1);
+
+    animation: moving 2.5s infinite;
+}
+
+
+@keyframes moving{
+    0%{
+        margin-left:  0;
+        background-color: #3F51B5;
+        transform: rotate(180deg);
+    }
+
+    50%{
+        margin-left: calc(100vw - 400px);
+        background-color: #3F51B5;
+    }
+
+    100%{
+        margin-left: 0vw;
+        background-color: #F44336;
+        transform: rotate(0deg);
+    }
+
+}

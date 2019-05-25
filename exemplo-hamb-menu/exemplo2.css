@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+}
+
+
+.hamb{
+    background-color: #1976D2;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+
+
+}
+
+
+
+.hamb:hover > .hamb-menu{
+    transform: rotateY(0deg);
+}
+
+
+.item{
+    background-color: #4CAF50;
+    margin-top: 10px;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+}
+
+
+.hamb-menu{
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    height: 270px;
+    position: fixed;
+    bottom: 30px;
+    border-radius: 0%;
+
+    transform: rotateY(0deg);
+    transition: all 0.3s linear;
+
+    animation: spin 0.9s infinite;    
+    
+}
+
+@keyframes spin{
+    0%{
+        transform: rotateY(0deg);
+    }
+
+    25%{
+        transform: rotateY(45deg);
+    }
+
+
+    50%{
+        transform: rotateY(90deg);
+    }
+
+    75%{
+        transform: rotateY(135deg);
+    }
+
+    100%{
+        transform: rotateY(180deg);
+    }
+}
+

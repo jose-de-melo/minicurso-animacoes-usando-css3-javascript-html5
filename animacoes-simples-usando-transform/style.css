@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    height: 100vh;
+}
+
+.quadrado{
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    background-color: #F44336;
+    border: thick  groove  black;
+    color:white;
+    transition: all 1s cubic-bezier(.06,.87,.69,1);
+}
+
+.quadrado:hover{
+    background-color: #00BCD4;
+}
+
+#quadrado:hover{
+    transform: translateY(-50%) ;
+}
+
+
+#quadrado1:hover{
+    transform: scale(1.5);
+}
+
+#quadrado2:hover{
+    transform: translateY(50%) ;
+}

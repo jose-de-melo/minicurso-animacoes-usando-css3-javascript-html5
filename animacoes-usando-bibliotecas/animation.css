@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    width: 100%;
+}
+
+.circle-container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center
+}
+
+.circle{
+    background-color: #673AB7;
+    border-radius: 100%;
+    margin-top: 100px;
+    width: 100px;
+    height: 100px;
+    box-shadow: 1px 3px 9px grey;
+}
